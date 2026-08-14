@@ -1,0 +1,36 @@
+name: chat_app
+description: A 1-to-1 real-time chat app built with Flutter and Firestore.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Firebase
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+
+  # State management
+  provider: ^6.1.2
+
+  # Local session persistence (so the user stays logged in)
+  shared_preferences: ^2.3.2
+
+  # Password hashing (never store plain-text passwords)
+  crypto: ^3.0.5
+
+  # Date/time formatting for chat timestamps
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
